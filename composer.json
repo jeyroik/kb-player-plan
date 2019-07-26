@@ -1,13 +1,10 @@
 {
-  "name": "jeyroik/kb-book-plan",
-  "description": "Book package for Kilobook",
+  "name": "jeyroik/kb-player-plan",
+  "description": "Player plan package for Kilobook",
   "require": {
     "jeyroik/extas-foundation":"*",
     "jeyroik/extas-installer":"*",
-    "jeyroik/extas-players": "*",
-    "jeyroik/extas-base":"*",
-    "jeyroik/extas-templates": "*",
-    "jeyroik/kb-book": "*"
+    "jeyroik/kb-plan": "*"
   },
   "autoload": {
     "psr-4": {
