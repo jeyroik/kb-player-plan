@@ -1,0 +1,27 @@
+{
+  "name": "kb.book.plan",
+  "package_classes": [
+    {
+      "interface": "extas\\interfaces\\players\\plans\\IPlayerPlanRepository",
+      "class": "extas\\components\\players\\plans\\PlayerPlanRepository"
+    },
+    {
+      "interface": "extas\\interfaces\\players\\plans\\progress\\IPlayerPlanProgressRepository",
+      "class": "extas\\components\\players\\plans\\progress\\PlayerPlanProgressRepository"
+    },
+    {
+      "interface": "extas\\interfaces\\players\\plans\\facts\\IPlayerPlanFactRepository",
+      "class": "extas\\components\\players\\plans\\facts\\PlayerPlanFactRepository"
+    }
+  ],
+  "plugins": [
+    {
+      "class": "extas\\components\\plugins\\players\\plans\\PlayerPlanPluginProgressAddToFact",
+      "stage": "kb.player.plan.progress.added"
+    },
+    {
+      "class": "extas\\components\\plugins\\players\\plans\\PlayerPlanFactPluginProgressAdd",
+      "stage": "kb.player.plan.progress.add"
+    }
+  ]
+}
