@@ -16,6 +16,18 @@
   ],
   "plugins": [
     {
+      "class": "extas\\components\\plugins\\PluginInstallPlayerPlans",
+      "stage": "extas.install"
+    },
+    {
+      "class": "extas\\components\\plugins\\PluginInstallPlayerPlanFacts",
+      "stage": "extas.install"
+    },
+    {
+      "class": "extas\\components\\plugins\\PluginInstallPlayerPlanProgress",
+      "stage": "extas.install"
+    },
+    {
       "class": "extas\\components\\plugins\\players\\plans\\PlayerPlanPluginProgressAddToFact",
       "stage": "kb.player.plan.progress.added"
     },
